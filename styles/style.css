@@ -1,0 +1,126 @@
+/* -------------------------------------------
+   GLOBAL FONT SETTINGS
+------------------------------------------- */
+
+/* Apply modern font to entire app */
+html, body, [class*="css"] {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* -------------------------------------------
+   MAIN BACKGROUND
+------------------------------------------- */
+
+/* Gradient dark background for full app */
+[data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8, #312e81);
+    color: white;
+}
+
+
+/* -------------------------------------------
+   MAIN CONTENT CONTAINER
+------------------------------------------- */
+
+/* Glassmorphism effect for main content area */
+.main .block-container {
+    background: rgba(255, 255, 255, 0.08);   /* Transparent white */
+    padding: 2rem;
+    border-radius: 20px;                    /* Rounded corners */
+    backdrop-filter: blur(12px);            /* Blur effect */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* -------------------------------------------
+   HIDE DEFAULT SIDEBAR NAV
+------------------------------------------- */
+
+/* Removes default Streamlit sidebar navigation */
+[data-testid="stSidebarNav"] {
+    display: none;
+}
+
+
+/* -------------------------------------------
+   TEXT COLOR
+------------------------------------------- */
+
+/* Force all text elements to be white */
+h1, h2, h3, h4, h5, h6, p, label, span, div {
+    color: white !important;
+}
+
+
+/* -------------------------------------------
+   BUTTON STYLING
+------------------------------------------- */
+
+/* Primary button styling */
+.stButton > button {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6) !important; /* Gradient */
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 10px 18px !important;
+    font-weight: 600 !important;
+}
+
+/* Button hover effect */
+.stButton > button:hover {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;
+    transform: scale(1.03);   /* Slight zoom effect */
+}
+
+
+/* -------------------------------------------
+   INPUT FIELDS
+------------------------------------------- */
+
+/* Text inputs, textarea, number input styling */
+.stTextInput input,
+.stTextArea textarea,
+.stNumberInput input {
+    background-color: rgba(255, 255, 255, 0.10) !important;
+    color: white !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+}
+
+
+/* -------------------------------------------
+   FILE UPLOADER
+------------------------------------------- */
+
+/* Styling for file upload box */
+.stFileUploader {
+    background: rgba(255, 255, 255, 0.06);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+
+/* -------------------------------------------
+   METRIC CARDS
+------------------------------------------- */
+
+/* Styling for metric display (scores) */
+[data-testid="stMetric"] {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    border-radius: 16px;
+}
+
+
+/* -------------------------------------------
+   DATAFRAME TABLE
+------------------------------------------- */
+
+/* Styling for table output */
+[data-testid="stDataFrame"] {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    padding: 10px;
+}

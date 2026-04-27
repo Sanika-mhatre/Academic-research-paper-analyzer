@@ -1,0 +1,5 @@
+Large Language Models (LLMs) have emerged as powerful tools in natural language processing. They are trained on vast amounts of text data and can perform tasks such as translation, summarization, and question answering.
+
+Citation context analysis (CCA) studies the role and function of citations within scientific literature. It helps understand how knowledge is constructed and referenced.
+
+The development of deep neural networks has significantly improved performance in various NLP tasks, including text classification and sentiment analysis.
